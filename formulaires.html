@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Les formulaires Sir:!</title>
+    </head>
+    <body>
+        <a href="index.html"> Retour au Menu </a>
+        <form action="inscription.php"><!-- receuil des infos -->
+            -<fieldset>
+                <legend> Inscription </legend>
+                <label> Nom    :   </label>
+                <input placeholder="NOM PRENOM"><!-- utilisateur peut rentrer l'info-->
+                <br>
+                <label> Email: </label>
+                <input type="email" required placeholder="nom@email.com">
+                <br>
+
+                <label> Password </label>
+                <input required type="password">
+                <br>
+                
+                <label> Description : </label>                 
+                <br>
+                <textarea cols="30" rows="5" placeholder="Tapez ici votre ressenti chers protagonistes ">
+                </textarea>
+                <br>
+                <label> Genre </label>
+                <input type="radio" name="genre">Hommme
+                <input type="radio" name="genre">Femme
+                <br>
+                <label>Préférences </label>
+                <input type="checkbox"> Livres
+                <input type="checkbox"> Gastronomie
+                <input type="checkbox"> Sport de combat
+                <br>
+                
+                <label> Age: </label>
+                <select> <!-- choix parmi une liste-->
+                    <option>12-15</option>
+                    <option>16-24</option>
+                    <option>25-35</option>
+                    <option>35 et +</option>
+                </select>
+                
+                <br>
+                <input type="submit" value="Valide-tu petit scarabée ?">
+                <input type="reset" value="Retourne dans le désert min' tcho">
+            </fieldset>
+        </form>
+    </body>
+</html>
